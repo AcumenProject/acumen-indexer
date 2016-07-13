@@ -54,21 +54,20 @@ public final class Config {
 		{
 		    XMLConfiguration config = builder.getConfiguration();
 		    BASE_DIR = config.getString("basePath");
-		    REPO_DIR = config.getString("acumen.global.contentDir");
-		    REPO_DIR_FULL = BASE_DIR+REPO_DIR;
-		    
-		    BASE_URL = config.getString("acumen.global.url");
-		    
-		    ACUMEN_DIR = config.getString("acumen.live.dir");
-		    XSL_DIR = config.getString("acumen.global.xslDir");
-		    METADATA_DIR = config.getString("acumen.global.metadataDirName");
-		    TRANSCRIPTS_DIR = config.getString("acumen.global.transcriptsDirName");
-		    PARENT_DELIMITER = config.getString("acumen.global.fileNameParentDelim");
-		    
-		    CURRENT_DB = config.getString("acumen.dev.database.dbname");
-		    DB_USER = config.getString("acumen.dev.database.user");
-		    DB_PASS = config.getString("acumen.dev.database.pass");
-		    DB_HOST = config.getString("acumen.dev.database.host");
+		    REPO_DIR_FULL = config.getString("contentDir");
+
+		    BASE_URL = config.getString("url");
+
+		    ACUMEN_DIR = config.getString("acumenDir");
+		    XSL_DIR = config.getString("xslDir");
+		    METADATA_DIR = config.getString("metadataDirName");
+		    TRANSCRIPTS_DIR = config.getString("transcriptsDirName");
+		    PARENT_DELIMITER = config.getString("fileNameParentDelim");
+
+		    CURRENT_DB = config.getString("database.dbname");
+		    DB_USER = config.getString("database.user");
+		    DB_PASS = config.getString("database.pass");
+		    DB_HOST = config.getString("database.host");
 		    
 		}catch(ConfigurationException cex)
 		{
