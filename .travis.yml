@@ -6,7 +6,7 @@ jdk:
 - oraclejdk8
 before_deploy:
 - mvn -DskipTests package
-- export RELEASE_FILE=$(ls target/acumen-indexer-*.jar
+- export RELEASE_FILE=$(ls target/acumen-indexer-*.jar)
 deploy:
   provider: releases
   api_key:
