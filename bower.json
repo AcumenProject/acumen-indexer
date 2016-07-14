@@ -1,0 +1,21 @@
+{
+  "name": "acumen-indexer",
+  "homepage": "https://github.com/AcumenProject/acumen-indexer",
+  "authors": [
+    "Will Jones <the8bitsquid@gmail.com>"
+  ],
+  "description": "Indexer for Acumen digital archive explorer",
+  "main": "acumen-indexer.jar",
+  "keywords": [
+    "Acumen"
+  ],
+  "license": "ECL-2.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
