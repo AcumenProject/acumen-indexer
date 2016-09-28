@@ -46,7 +46,7 @@ public final class Location {
 	}
 
 	public static String stepBackLoc(String currentLoc) {
-		Pattern parentLocPattern = Pattern.compile("[^.]*(?=_[a-zA-Z0-9]+)");
+		Pattern parentLocPattern = Pattern.compile("([^.]*)(?=_[a-zA-Z0-9]+)");
 		Matcher m = parentLocPattern.matcher(currentLoc);
 
 		if (m.find()) {
